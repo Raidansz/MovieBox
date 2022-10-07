@@ -43,8 +43,8 @@ class TitleTableViewCell: UITableViewCell {
     private func applyConstraints(){
         let titlesPosterUIImageViewConstraints = [
             titlesPosterUIImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            titlesPosterUIImageView.topAnchor.constraint(equalTo: contentView.topAnchor,constant: 15)
-            titlesPosterUIImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,constant: -15)
+            titlesPosterUIImageView.topAnchor.constraint(equalTo: contentView.topAnchor,constant: 15),
+            titlesPosterUIImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,constant: -15),
             titlesPosterUIImageView.widthAnchor.constraint(equalToConstant:100)
              
         ]
@@ -52,7 +52,12 @@ class TitleTableViewCell: UITableViewCell {
     }
     
     
-    
+    public func configure(with model: TitleViewModel){
+        guard let url = URL(string: model.posterURL) else {return}
+
+        titlesPosterUIImageView.sd_setImage(with: url,completed:nil)
+        titleLabel.text = model.titleName
+    }
     
     required  init?(coder: NSCoder) {
         fatalError()

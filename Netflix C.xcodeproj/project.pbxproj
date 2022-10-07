@@ -22,6 +22,7 @@
 		AA5C95D728E0F37400EDF997 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C95D628E0F37400EDF997 /* Title.swift */; };
 		AA5C95D928E0FC6600EDF997 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C95D828E0FC6600EDF997 /* Extensions.swift */; };
 		AA9E49E328F0AF67005101BB /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E49E228F0AF67005101BB /* TitleTableViewCell.swift */; };
+		AA9E49E528F0B553005101BB /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E49E428F0B552005101BB /* TitleViewModel.swift */; };
 		AAEB085328D660AC004D7A09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEB085228D660AC004D7A09 /* HomeViewController.swift */; };
 		AAEB085528D660D7004D7A09 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEB085428D660D7004D7A09 /* UpcomingViewController.swift */; };
 		AAEB085728D660FB004D7A09 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEB085628D660FB004D7A09 /* SearchViewController.swift */; };
@@ -65,6 +66,7 @@
 		AA5C95D628E0F37400EDF997 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		AA5C95D828E0FC6600EDF997 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AA9E49E228F0AF67005101BB /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		AA9E49E428F0B552005101BB /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		AAEB085228D660AC004D7A09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AAEB085428D660D7004D7A09 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		AAEB085628D660FB004D7A09 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		AAEB085B28D67CD4004D7A09 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AA9E49E428F0B552005101BB /* TitleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				AAEB085328D660AC004D7A09 /* HomeViewController.swift in Sources */,
 				AA5C95D728E0F37400EDF997 /* Title.swift in Sources */,
 				AAEB086028D67D71004D7A09 /* CollectionTableViewCell.swift in Sources */,
+				AA9E49E528F0B553005101BB /* TitleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
