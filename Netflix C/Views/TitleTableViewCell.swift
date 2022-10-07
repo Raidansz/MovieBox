@@ -14,6 +14,7 @@ class TitleTableViewCell: UITableViewCell {
     private let playTitleButton:UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     
@@ -48,7 +49,21 @@ class TitleTableViewCell: UITableViewCell {
             titlesPosterUIImageView.widthAnchor.constraint(equalToConstant:100)
              
         ]
+        
+        
+        
+        let titleLabelConstraints = [
+            titleLabel.leadingAnchor.constraint(equalTo: titlesPosterUIImageView.trailingAnchor,constant: 20),
+            titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            
+             
+        ]
+        
+        
+        
+        
         NSLayoutConstraint.activate(titlesPosterUIImageViewConstraints)
+        NSLayoutConstraint.activate(titleLabelConstraints)
     }
     
     
