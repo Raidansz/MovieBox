@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
 
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero,style: .grouped)
-        table.register(CollectionTableViewCell.self, forCellReuseIdentifier: CollectionTableViewCell.identifier)
+        table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
         return table
     }()
     
@@ -51,6 +51,8 @@ class HomeViewController: UIViewController {
         let headerView = HeroHeaderUIView(frame: CGRect(x:0,y:0,width: view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView = headerView
         
+        
+        navigationController?.pushViewController(TitlePreviewViewController(), animated: true)
         
     }
     private func configureNavbar(){
@@ -103,7 +105,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier,for: indexPath) as? CollectionTableViewCell else{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier,for: indexPath) as? CollectionViewTableViewCell else{
             return UITableViewCell()
         }
         
