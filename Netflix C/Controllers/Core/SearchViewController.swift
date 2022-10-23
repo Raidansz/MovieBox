@@ -9,7 +9,7 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
-    private var titles:[Title] = [Title]()
+    public var titles:[Title] = [Title]()
     
     private let discoverTable: UITableView = {
         let table = UITableView()
@@ -44,6 +44,8 @@ class SearchViewController: UIViewController {
         navigationItem.searchController = searchController
         navigationController?.navigationBar.tintColor = .white
         fetchDiscoverMovies()
+        
+        searchController.searchResultsUpdater = self
     }
     
     
@@ -109,4 +111,33 @@ extension SearchViewController: UITableViewDelegate,UITableViewDataSource {
              return 150
          }
     
+}
+
+
+extension SearchViewController:UISearchResultsUpdating{
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        guard let query = searchBar.text,
+              !query.trimmingCharacters(in: .whitespaces).isEmpty,
+              query.trimmingCharacters(in: .whitespaces).count >= 3,
+              let resultsController = searchController.searchResultsController as? SearchResultsViewController else {
+            return
+        }
+        
+        APICaller.shared.search(with: query){ results in
+            DispatchQueue.main.async {
+                switch results{
+                case .success(let titles):
+                    resultsController.titles = titles
+                    resultsController.searchResultsCollectionView.reloadData()
+                    
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        
+        
+    }
 }
