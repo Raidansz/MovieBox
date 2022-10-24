@@ -52,7 +52,7 @@ class HomeViewController: UIViewController {
         homeFeedTable.tableHeaderView = headerView
         
         
-        navigationController?.pushViewController(TitlePreviewViewController(), animated: true)
+  
         
     }
     private func configureNavbar(){
@@ -108,7 +108,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier,for: indexPath) as? CollectionViewTableViewCell else{
             return UITableViewCell()
         }
-        
+        cell.delegate = self
         switch indexPath.section{
             
         case Sections.TrendingMovies.rawValue:
@@ -208,3 +208,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     
 }
 
+
+extension HomeViewController: CollectionViewTableViewCellDelegate{
+    func collectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, viewModel: TitlePreviewViewModel) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = TitlePreviewViewController()
+           
+            vc.configure(with: viewModel)
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+       
+    }
+    
+    
+    
+    
+}

@@ -8,7 +8,7 @@
 import UIKit
 
 
-protocol CollectionTableViewCellDelegate: AnyObject{
+protocol CollectionViewTableViewCellDelegate: AnyObject{
     func collectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, viewModel:TitlePreviewViewModel)
 }
 
@@ -20,7 +20,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     static let identifier = "CollectionViewTableViewCell"
     
     
-    weak var delegate:CollectionTableViewCellDelegate?
+    weak var delegate:CollectionViewTableViewCellDelegate?
    
     private var titles:[Title] = [Title]()
 
