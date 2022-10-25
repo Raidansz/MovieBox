@@ -53,16 +53,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA06B98C28D647C30091657D /* Netflix C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA06B98C28D647C30091657D /* MovieBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA06B98F28D647C30091657D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA06B99128D647C30091657D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA06B99328D647C30091657D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		AA06B99828D647C40091657D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA06B99B28D647C40091657D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA06B99D28D647C40091657D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA06B9A228D647C40091657D /* Netflix CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Netflix CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA06B9A228D647C40091657D /* MovieBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA06B9A628D647C40091657D /* Netflix_CTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_CTests.swift; sourceTree = "<group>"; };
-		AA06B9AC28D647C40091657D /* Netflix CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Netflix CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA06B9AC28D647C40091657D /* MovieBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA06B9B028D647C40091657D /* Netflix_CUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_CUITests.swift; sourceTree = "<group>"; };
 		AA06B9B228D647C40091657D /* Netflix_CUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_CUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AA5A313B28E7979100EECB1D /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -123,9 +123,9 @@
 		AA06B98D28D647C30091657D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA06B98C28D647C30091657D /* Netflix C.app */,
-				AA06B9A228D647C40091657D /* Netflix CTests.xctest */,
-				AA06B9AC28D647C40091657D /* Netflix CUITests.xctest */,
+				AA06B98C28D647C30091657D /* MovieBox.app */,
+				AA06B9A228D647C40091657D /* MovieBoxTests.xctest */,
+				AA06B9AC28D647C40091657D /* MovieBoxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,9 +243,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA06B98B28D647C30091657D /* Netflix C */ = {
+		AA06B98B28D647C30091657D /* MovieBox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA06B9B628D647C40091657D /* Build configuration list for PBXNativeTarget "Netflix C" */;
+			buildConfigurationList = AA06B9B628D647C40091657D /* Build configuration list for PBXNativeTarget "MovieBox" */;
 			buildPhases = (
 				AA06B98828D647C30091657D /* Sources */,
 				AA06B98928D647C30091657D /* Frameworks */,
@@ -255,18 +255,18 @@
 			);
 			dependencies = (
 			);
-			name = "Netflix C";
+			name = MovieBox;
 			packageProductDependencies = (
 				AA5A313E28E799FC00EECB1D /* SDWebImage */,
 				AA5A314028E799FC00EECB1D /* SDWebImageMapKit */,
 			);
 			productName = "Netflix C";
-			productReference = AA06B98C28D647C30091657D /* Netflix C.app */;
+			productReference = AA06B98C28D647C30091657D /* MovieBox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA06B9A128D647C40091657D /* Netflix CTests */ = {
+		AA06B9A128D647C40091657D /* MovieBoxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA06B9B928D647C40091657D /* Build configuration list for PBXNativeTarget "Netflix CTests" */;
+			buildConfigurationList = AA06B9B928D647C40091657D /* Build configuration list for PBXNativeTarget "MovieBoxTests" */;
 			buildPhases = (
 				AA06B99E28D647C40091657D /* Sources */,
 				AA06B99F28D647C40091657D /* Frameworks */,
@@ -277,14 +277,14 @@
 			dependencies = (
 				AA06B9A428D647C40091657D /* PBXTargetDependency */,
 			);
-			name = "Netflix CTests";
+			name = MovieBoxTests;
 			productName = "Netflix CTests";
-			productReference = AA06B9A228D647C40091657D /* Netflix CTests.xctest */;
+			productReference = AA06B9A228D647C40091657D /* MovieBoxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AA06B9AB28D647C40091657D /* Netflix CUITests */ = {
+		AA06B9AB28D647C40091657D /* MovieBoxUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA06B9BC28D647C40091657D /* Build configuration list for PBXNativeTarget "Netflix CUITests" */;
+			buildConfigurationList = AA06B9BC28D647C40091657D /* Build configuration list for PBXNativeTarget "MovieBoxUITests" */;
 			buildPhases = (
 				AA06B9A828D647C40091657D /* Sources */,
 				AA06B9A928D647C40091657D /* Frameworks */,
@@ -295,9 +295,9 @@
 			dependencies = (
 				AA06B9AE28D647C40091657D /* PBXTargetDependency */,
 			);
-			name = "Netflix CUITests";
+			name = MovieBoxUITests;
 			productName = "Netflix CUITests";
-			productReference = AA06B9AC28D647C40091657D /* Netflix CUITests.xctest */;
+			productReference = AA06B9AC28D647C40091657D /* MovieBoxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -323,7 +323,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA06B98728D647C30091657D /* Build configuration list for PBXProject "Netflix C" */;
+			buildConfigurationList = AA06B98728D647C30091657D /* Build configuration list for PBXProject "MovieBox" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -339,9 +339,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA06B98B28D647C30091657D /* Netflix C */,
-				AA06B9A128D647C40091657D /* Netflix CTests */,
-				AA06B9AB28D647C40091657D /* Netflix CUITests */,
+				AA06B98B28D647C30091657D /* MovieBox */,
+				AA06B9A128D647C40091657D /* MovieBoxTests */,
+				AA06B9AB28D647C40091657D /* MovieBoxUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -421,12 +421,12 @@
 /* Begin PBXTargetDependency section */
 		AA06B9A428D647C40091657D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA06B98B28D647C30091657D /* Netflix C */;
+			target = AA06B98B28D647C30091657D /* MovieBox */;
 			targetProxy = AA06B9A328D647C40091657D /* PBXContainerItemProxy */;
 		};
 		AA06B9AE28D647C40091657D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA06B98B28D647C30091657D /* Netflix C */;
+			target = AA06B98B28D647C30091657D /* MovieBox */;
 			targetProxy = AA06B9AD28D647C40091657D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -632,7 +632,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netflix C.app/Netflix C";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieBox.app/MovieBox";
 			};
 			name = Debug;
 		};
@@ -652,7 +652,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netflix C.app/Netflix C";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieBox.app/MovieBox";
 			};
 			name = Release;
 		};
@@ -695,7 +695,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA06B98728D647C30091657D /* Build configuration list for PBXProject "Netflix C" */ = {
+		AA06B98728D647C30091657D /* Build configuration list for PBXProject "MovieBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA06B9B428D647C40091657D /* Debug */,
@@ -704,7 +704,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA06B9B628D647C40091657D /* Build configuration list for PBXNativeTarget "Netflix C" */ = {
+		AA06B9B628D647C40091657D /* Build configuration list for PBXNativeTarget "MovieBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA06B9B728D647C40091657D /* Debug */,
@@ -713,7 +713,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA06B9B928D647C40091657D /* Build configuration list for PBXNativeTarget "Netflix CTests" */ = {
+		AA06B9B928D647C40091657D /* Build configuration list for PBXNativeTarget "MovieBoxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA06B9BA28D647C40091657D /* Debug */,
@@ -722,7 +722,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA06B9BC28D647C40091657D /* Build configuration list for PBXNativeTarget "Netflix CUITests" */ = {
+		AA06B9BC28D647C40091657D /* Build configuration list for PBXNativeTarget "MovieBoxUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA06B9BD28D647C40091657D /* Debug */,
