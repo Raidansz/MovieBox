@@ -27,7 +27,7 @@ class SearchResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.backgroundColor = .systemBackground
         view.addSubview(searchResultsCollectionView)
         
         searchResultsCollectionView.delegate = self
