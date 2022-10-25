@@ -1,6 +1,7 @@
 # MovieBox
 
 
+![Screenshot_2022-10-25_at_PM_8 41 14-removebg-preview](https://user-images.githubusercontent.com/92235772/197855605-68563009-d323-4f19-8d7e-aa59b6ac3931.png)
 
 
 <p align="left">
