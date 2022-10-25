@@ -12,9 +12,6 @@
 		AA06B99428D647C30091657D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B99328D647C30091657D /* MainTabBarViewController.swift */; };
 		AA06B99928D647C40091657D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA06B99828D647C40091657D /* Assets.xcassets */; };
 		AA06B99C28D647C40091657D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA06B99A28D647C40091657D /* LaunchScreen.storyboard */; };
-		AA06B9A728D647C40091657D /* Netflix_CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B9A628D647C40091657D /* Netflix_CTests.swift */; };
-		AA06B9B128D647C40091657D /* Netflix_CUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B9B028D647C40091657D /* Netflix_CUITests.swift */; };
-		AA06B9B328D647C40091657D /* Netflix_CUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06B9B228D647C40091657D /* Netflix_CUITestsLaunchTests.swift */; };
 		AA5A313C28E7979100EECB1D /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A313B28E7979100EECB1D /* TitleCollectionViewCell.swift */; };
 		AA5A313F28E799FC00EECB1D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AA5A313E28E799FC00EECB1D /* SDWebImage */; };
 		AA5A314128E799FC00EECB1D /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA5A314028E799FC00EECB1D /* SDWebImageMapKit */; };
@@ -61,10 +58,7 @@
 		AA06B99B28D647C40091657D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA06B99D28D647C40091657D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA06B9A228D647C40091657D /* MovieBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA06B9A628D647C40091657D /* Netflix_CTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_CTests.swift; sourceTree = "<group>"; };
 		AA06B9AC28D647C40091657D /* MovieBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA06B9B028D647C40091657D /* Netflix_CUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_CUITests.swift; sourceTree = "<group>"; };
-		AA06B9B228D647C40091657D /* Netflix_CUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_CUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AA5A313B28E7979100EECB1D /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA5C95D428E0EDE100EDF997 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		AA5C95D628E0F37400EDF997 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
@@ -113,9 +107,7 @@
 		AA06B98328D647C30091657D = {
 			isa = PBXGroup;
 			children = (
-				AA06B98E28D647C30091657D /* Netflix C */,
-				AA06B9A528D647C40091657D /* Netflix CTests */,
-				AA06B9AF28D647C40091657D /* Netflix CUITests */,
+				AA06B98E28D647C30091657D /* MovieBox */,
 				AA06B98D28D647C30091657D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,7 +122,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA06B98E28D647C30091657D /* Netflix C */ = {
+		AA06B98E28D647C30091657D /* MovieBox */ = {
 			isa = PBXGroup;
 			children = (
 				AAEB085E28D67D08004D7A09 /* Managers */,
@@ -145,24 +137,7 @@
 				AA06B99A28D647C40091657D /* LaunchScreen.storyboard */,
 				AA06B99D28D647C40091657D /* Info.plist */,
 			);
-			path = "Netflix C";
-			sourceTree = "<group>";
-		};
-		AA06B9A528D647C40091657D /* Netflix CTests */ = {
-			isa = PBXGroup;
-			children = (
-				AA06B9A628D647C40091657D /* Netflix_CTests.swift */,
-			);
-			path = "Netflix CTests";
-			sourceTree = "<group>";
-		};
-		AA06B9AF28D647C40091657D /* Netflix CUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AA06B9B028D647C40091657D /* Netflix_CUITests.swift */,
-				AA06B9B228D647C40091657D /* Netflix_CUITestsLaunchTests.swift */,
-			);
-			path = "Netflix CUITests";
+			path = MovieBox;
 			sourceTree = "<group>";
 		};
 		AA6FABF228FCB1B200789BD5 /* Core */ = {
@@ -403,7 +378,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA06B9A728D647C40091657D /* Netflix_CTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,8 +385,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA06B9B128D647C40091657D /* Netflix_CUITests.swift in Sources */,
-				AA06B9B328D647C40091657D /* Netflix_CUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +540,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 534SAT4S5S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Netflix C/Info.plist";
+				INFOPLIST_FILE = MovieBox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -579,7 +551,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "raidan.Netflix-C";
+				PRODUCT_BUNDLE_IDENTIFIER = raidan.MovieBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -597,7 +569,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 534SAT4S5S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Netflix C/Info.plist";
+				INFOPLIST_FILE = MovieBox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -608,7 +580,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "raidan.Netflix-C";
+				PRODUCT_BUNDLE_IDENTIFIER = raidan.MovieBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
